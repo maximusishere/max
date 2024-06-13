@@ -1,0 +1,23 @@
+robots = '3 2 2 2 4 5 7 1'
+weight_limit = 3
+
+def platform(robots, weight_limit):
+    robots_list = sorted(list(map(int, robots.split())))
+    platform_count = 0
+    left = 0
+    right = len(robots_list) - 1
+
+    while left <= right:
+        if left == right:  # Если остался один робот
+            platform_count += 1
+            break
+        if robots_list[left] + robots_list[right] <= weight_limit:
+            left += 1
+            right -= 1
+        else:
+            right -= 1
+        platform_count += 1  # Платформа добавляется после каждой пары или одиночного робота
+
+    return platform_count
+
+print(platform(robots, weight_limit))
