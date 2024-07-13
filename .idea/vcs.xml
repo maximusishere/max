@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/AI/AI_project_G4F" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/AI/Telegram-bot-gpt4free" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AI/anfisa1sprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/acme_project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/anfisa1sprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/anfisa2sprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/anfisa2sprint/anfisa_for_friends/anfisa2sprint" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/backend_test_homework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/django_sprint1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/django_sprint3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/django_sprint4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/first_project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/first_project/jump_into_django" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/first_project/video_lesson_debug" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pythonProject" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/quess_number" vcs="Git" />
