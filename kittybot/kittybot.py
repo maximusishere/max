@@ -18,7 +18,7 @@ def get_new_image():
     try:
         response = requests.get(URL)
     except Exception as error:
-        print(error)      
+        print(error)  
         new_url = 'https://api.thedogapi.com/v1/images/search'
         response = requests.get(new_url)
     
