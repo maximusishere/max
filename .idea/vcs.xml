@@ -5,10 +5,12 @@
     <mapping directory="$PROJECT_DIR$/AI/AI_project_G4F" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/AI/Telegram-bot-gpt4free" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/AI/anfisa1sprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/YaNews/ya_news" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/acme_project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/anfisa1sprint" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/anfisa2sprint" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/anfisa2sprint/anfisa_for_friends/anfisa2sprint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api_yatube" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/backend_test_homework" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/django_sprint1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/django_sprint3" vcs="Git" />
@@ -16,9 +18,15 @@
     <mapping directory="$PROJECT_DIR$/first_project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/first_project/jump_into_django" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/first_project/video_lesson_debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homework_bot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kittygram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kittygram2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kittygram_plus/kittygram_plus" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pythonProject" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/quess_number" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sprint11/django_testing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/the_snake" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/tik_tac_toe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ya_note/ya_note" vcs="Git" />
   </component>
 </project>

@@ -1,30 +1,37 @@
 import os
+import requests
+import logging
 from dotenv import load_dotenv
 from telebot import TeleBot, types
-import requests
+import ollama
+
 
 load_dotenv()
 
 secret_token = os.getenv('TOKEN')
 
-URL = os.getenv('URL')
-
 bot = TeleBot(token=secret_token)
 
-# Код запроса к thecatapi.com и обработку ответа обернём в функцию:
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO,
+)
+
+URL = os.getenv('URL')
 
 
 def get_new_image():
     try:
         response = requests.get(URL)
     except Exception as error:
-        print(error)  
+        logging.error(f'Ошибка при запросе к основному API: {error}')
         new_url = 'https://api.thedogapi.com/v1/images/search'
         response = requests.get(new_url)
-    
+
     response = response.json()
     random_cat = response[0].get('url')
     return random_cat
+
 
 # Добавляем хендлер для команды /newcat:
 @bot.message_handler(commands=['newcat'])
@@ -57,4 +64,12 @@ def say_hi(message):
     bot.send_message(chat_id=chat_id, text='Привет, я KittyBot!')
 
 
-bot.polling()
+def main():
+    try:
+        bot.polling(none_stop=True, interval=1)
+    except Exception as e:
+        logging.error(f"Ошибка в работе бота: {e}")
+
+
+if __name__ == '__main__':
+    main()
