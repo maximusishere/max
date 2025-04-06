@@ -1,9 +1,7 @@
 import os
 import requests
-import logging
 from dotenv import load_dotenv
 from telebot import TeleBot, types
-import ollama
 
 
 load_dotenv()
@@ -12,11 +10,6 @@ secret_token = os.getenv('TOKEN')
 
 bot = TeleBot(token=secret_token)
 
-logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-)
-
 URL = os.getenv('URL')
 
 
@@ -24,7 +17,7 @@ def get_new_image():
     try:
         response = requests.get(URL)
     except Exception as error:
-        logging.error(f'Ошибка при запросе к основному API: {error}')
+        print(error)
         new_url = 'https://api.thedogapi.com/v1/images/search'
         response = requests.get(new_url)
 
@@ -65,10 +58,7 @@ def say_hi(message):
 
 
 def main():
-    try:
-        bot.polling(none_stop=True, interval=1)
-    except Exception as e:
-        logging.error(f"Ошибка в работе бота: {e}")
+    bot.polling()
 
 
 if __name__ == '__main__':
